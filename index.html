@@ -1,141 +1,211 @@
 <!doctype html>
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f5ecda" />
-    <meta name="description" content="百年綠意・爵代新聲｜Milespace 臺中州廳草地音樂會。2027 年 1 月四場午後爵士，讓百年古蹟成為城市客廳。" />
-    <title>百年綠意・爵代新聲｜Milespace 臺中州廳草地音樂會</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Noto+Serif+TC:wght@500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Milespace 回到首頁"><img src="assets/milespacelogo.png" alt="Milespace" /></a>
-      <div class="header-event">AFTERNOON OF JAZZ <span>·</span> TAICHUNG</div>
-      <nav aria-label="主要導覽">
-        <a href="#about">活動理念</a>
-        <a href="#dates">四場活動</a>
-        <a href="#lineup">演出陣容</a>
-        <a href="#venue">場地資訊</a>
-      </nav>
-      <a class="header-mark" href="#dates" aria-label="查看活動日期">2027<br /><b>01</b></a>
-    </header>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>【百年綠意 · 爵代新聲】MileSpace · 臺中州廳草地音樂會 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Kaushan+Script&family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=ms12">
+</head>
+<body>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-yellow-block" aria-hidden="true"></div>
-        <div class="hero-copy">
-          <p class="micro-label">MILESPACE PRESENTS <span>/</span> GRASSLAND CONCERT</p>
-          <h1 id="hero-title"><span>百年綠意</span><br />爵代新聲</h1>
-          <p class="hero-subtitle">MileSpace · 臺中州廳草地音樂會</p>
-          <div class="hero-meta">
-            <div><small>DATE</small><strong>2027 / 1 / 9<br />1 / 10 · 1 / 16 · 1 / 17</strong></div>
-            <div><small>SHOW TIME</small><strong>多數場次<br /><em>15:30 — 17:30</em></strong><b class="hero-time-alert">1/17 提早至 14:30 開始</b></div>
-          </div>
-          <div class="hero-actions"><a class="button button-dark" href="#dates">查看四場活動 <span>↘</span></a><a class="hero-text-link" href="#about">先讀一段前言 <span>↓</span></a></div>
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="MileSpace"><img class="lg-d" src="assets/wordmark_dark.png" alt="MileSpace"><img class="lg-l" src="assets/wordmark_light.png" alt=""></a>
+    <ul>
+      <li><a href="#about">活動理念</a></li>
+      <li><a href="#lineup">演出陣容</a></li>
+      <li><a href="#swing">搖擺舞體驗</a></li>
+      <li><a href="#venue">場地資訊</a></li>
+      <li><a href="#access">交通方式</a></li>
+      <li><a href="#milespace">關於 MileSpace</a></li>
+    </ul>
+    <a href="#lineup" class="cta">查看節目表 →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top" data-screen-label="01 Hero">
+  <div class="art"></div>
+  <div class="banner">
+    <h1><span class="a">【百年綠意 · 爵代新聲】</span><span class="b">MileSpace · 臺中州廳草地音樂會</span></h1>
+    <div class="en">2027 · TAICHUNG STATE HALL · GRASSLAND CONCERT</div>
+  </div>
+  <div class="spacer"></div>
+  <div class="infobar ib2">
+    <div class="tag">活動資訊<small>INFO</small></div>
+    <div class="cell ib-date">
+      <div class="lbl">DATE · 2027</div>
+      <div class="dates">
+        <a href="#lineup" data-day="0109"><b>1/9</b><span>SAT 週六</span></a>
+        <a href="#lineup" data-day="0110"><b>1/10</b><span>SUN 週日</span></a>
+        <a href="#lineup" data-day="0116"><b>1/16</b><span>SAT 週六</span></a>
+        <a href="#lineup" data-day="0117" class="sp"><b>1/17</b><span>SUN 週日</span></a>
+      </div>
+    </div>
+    <div class="cell ib-time">
+      <div class="lbl">TIME</div>
+      <div class="t">15:30 – 17:30</div>
+      <small>草地自由入座 · FREE SEATING</small>
+    </div>
+    <div class="ib-sp"><i>SPECIAL</i><span>1/17（日）<b>14:30</b> 開演 · 三團接力</span></div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="mq"></div></div>
+
+<!-- PREFACE -->
+<section class="block preface" id="about" data-screen-label="02 Preface">
+  <div class="wrap">
+    <div class="shead-wrap reveal">
+      <div class="shead"><h2>前言</h2></div>
+      <div class="ssub eyebrow">Preface · About this afternoon</div>
+    </div>
+    <div class="grid pf2">
+      <p class="big reveal">把百年古蹟，<br>變成城市的<em>客廳</em>。</p>
+      <p class="pf-body reveal">延續這座城市獨有的爵士熱情，本次活動將樂章帶進重新啟用的<b>百年臺中州廳</b>。褪去昔日官署的嚴肅感，仿巴洛克建築躍身為最美的戶外背景。帶上野餐墊、席地而坐，讓午後的爵士律動與冬日暖陽交織，邀請您走進這座充滿溫度的<b>「城市客廳」</b>，感受歷史與現代交融的全新風華。</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE -->
+<section class="scene" id="scene" data-screen-label="03 Scene">
+  <div class="scene-frame">
+    <img src="assets/jazz-afternoon.png" alt="臺中州廳草地爵士音樂會" id="sceneImg">
+  </div>
+  <div class="wrap scene-cap-wrap">
+    <div class="scene-cap reveal">
+      <p class="q" style="margin-top:0">紅磚拱廊、棕櫚樹影，<br>一張野餐墊，一個爵士午後。</p>
+      <div class="tags"><span>內庭草坪</span><span>自由入座</span><span>攜帶野餐墊</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LINEUP -->
+<section class="block lineup dark" id="lineup" data-screen-label="04 Lineup">
+  <div class="wrap">
+    <div class="shead-wrap reveal">
+      <div class="shead"><h2>演出陣容 · 節目表</h2></div>
+      <div class="ssub eyebrow">Lineup · 9 Bands · 4 Afternoons</div>
+    </div>
+    <div class="daytabs" id="daytabs" role="tablist"></div>
+    <div class="special" id="special" hidden></div>
+    <div class="dayview">
+      <div class="bands" id="bands"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SWING -->
+<section class="block dance" id="swing" data-screen-label="05 Swing Dance">
+  <div class="wrap">
+    <div class="grid">
+      <div class="ph reveal">
+        <img src="assets/dance_v2.jpg" alt="Let's Swing Taichung 搖擺舞">
+        <div class="badge"><img src="assets/dance2.jpg" alt="Let's Swing Taichung logo"></div>
+      </div>
+      <div class="reveal">
+        <div class="when"><span>1/16 SAT · 16:20 – 16:40</span><span>限定場</span></div>
+        <h3><small>Let’s Swing Taichung</small>搖擺舞體驗</h3>
+        <p>台中最大的搖擺舞社群，帶你認識發源於 1920～1940 年代紐約哈林區的搖擺舞（Swing Dance）——一門隨著搖擺爵士樂歡快舞動的雙人社交舞。</p>
+        <p>沒有繁複嚴肅的舞步規範，也不需要死記動作。不論是爵士樂愛好者、想放鬆的上班族，或帶著孩子的家庭，都能隨音樂跨出第一步。</p>
+        <div class="kw"><span>自由</span><span>即興</span><span>互動</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section class="block venue" id="venue" data-screen-label="06 Venue">
+  <div class="wrap">
+    <div class="shead-wrap reveal">
+      <div class="shead"><h2>場地資訊</h2></div>
+      <div class="ssub eyebrow">Floor plan · Getting there</div>
+    </div>
+    <div class="grid">
+      <div class="map reveal">
+        <img src="assets/floorplan.jpg" alt="臺中州廳平面配置圖">
+        <div class="cap"><span>臺中州廳平面配置 · 俯視圖</span><span>N ↑</span></div>
+      </div>
+      <dl class="reveal">
+        <div><dt>活動區位<small>Activity area</small></dt><dd>演出位於州廳<b>內庭草坪</b>。本活動為草地音樂會，採自由入座、不劃設固定座位席。
+          <div class="legend"><span><i style="background:var(--red);border-radius:50%"></i>舞台區 · 東北角草坪側</span><span><i style="background:var(--y2)"></i>控台 · 舞台西側</span></div></dd></div>
+        <div><dt>入場動線<small>Entry flow</small></dt><dd>可由<b>民權路側拱廊</b>或<b>門廳方向</b>進場，最終於內庭草坪就座。</dd></div>
+        <div><dt>開放入場<small>Doors</small></dt><dd>1/9、1/10 自 13:30 起；1/16 自 13:50 起開放入場，現場播放輕柔爵士背景樂。<br><span style="color:var(--muted);font-size:14px">1/17（日）為三團加長場，14:25 開場、14:30 首團開演。</span></dd></div>
+        <div><dt>建議攜帶<small>Bring along</small></dt><dd><div class="bring"><span>野餐墊</span><span>保暖外套</span></div></dd></div>
+        <div><dt>地點<small>Location</small></dt><dd>臺中州廳 Taichung State Hall<br><span style="color:var(--muted);font-size:14px">臺中市西區民權路 99 號</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section class="block access" id="access" data-screen-label="07 Access">
+  <div class="wrap">
+    <div class="shead-wrap reveal">
+      <div class="shead"><h2>如何抵達臺中州廳</h2></div>
+      <div class="ssub eyebrow">Getting here · 臺中市西區民權路 99 號</div>
+    </div>
+    <div class="ac-grid">
+      <div class="ac-map reveal">
+        <iframe src="https://www.google.com/maps?q=%E8%87%BA%E4%B8%AD%E5%B7%9E%E5%BB%B3&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="臺中州廳地圖"></iframe>
+        <a class="ac-go" href="https://www.google.com/maps/dir/?api=1&destination=%E8%87%BA%E4%B8%AD%E5%B7%9E%E5%BB%B3" target="_blank" rel="noopener">Google 地圖導航 ↗</a>
+      </div>
+      <ol class="ac-list reveal">
+        <li><span class="k">公車<small>BUS</small></span><div><b>「臺中州廳」站下車</b>，步行即達。<br>可搭 6、11、14、21、25、27、30、32、37、41、45、101、107、108、132、142、163、290、323、324、325、500、850 等路線。<em>持市民卡搭市區公車 10 公里內免費</em></div></li>
+        <li><span class="k">臺鐵<small>TRAIN</small></span><div><b>臺中車站</b>出站後沿建國路左前方步行，右轉民權路，約 <b>10–15 分鐘</b>。</div></li>
+        <li><span class="k">高鐵<small>HSR</small></span><div><b>高鐵臺中站</b>轉乘臺中客運 26、全航客運 158、彰化客運 6933，於「臺中科大民生校區」站下車，步行約 3 分鐘。</div></li>
+        <li><span class="k">開車<small>CAR</small></span><div>周邊民權路、市府路、民生路、三民路設有路邊停車格（汽車 20 元/時起，機車免費）。<em>週末車位有限，建議搭乘大眾運輸</em></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT MILESPACE -->
+<section class="block ms-about" id="milespace" data-screen-label="08 About MileSpace">
+  <div class="wrap">
+    <div class="shead-wrap reveal">
+      <div class="shead"><h2>關於 MileSpace</h2></div>
+      <div class="ssub eyebrow">Produced by · 企劃執行單位</div>
+    </div>
+    <div class="ms-grid">
+      <div class="ms-logo reveal"><img src="assets/logo_dark.png" alt="MileSpace · LIVE. Drink. JAZZ"></div>
+      <div class="ms-copy reveal">
+        <p class="ms-lead">讓音樂回到城市，<br>也回到<em>生活</em>裡。</p>
+        <p>我們相信爵士不只發生在舞台上，更應融入日常的每一個時刻。</p>
+        <p>從一杯飲品、一段旋律，到老建築裡的相遇——MileSpace 持續以現場音樂、空間策展與城市文化為核心，點亮地方的生命力。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer data-screen-label="09 Footer">
+  <div class="wrap">
+    <div class="foot-brand"><img src="assets/logo_yellow.png" alt="MileSpace · LIVE. Drink. JAZZ"><div class="big">AFTERNOON<br>OF JAZZ</div></div>
+    <div class="credits">
+      <div><small>主辦單位 · ORGANIZER</small><img class="cr-gov" src="assets/tccab_light.png" alt="臺中市政府文化局"></div>
+      <div><small>策劃執行 · PRODUCED BY</small><img class="cr-ms" src="assets/wordmark_light.png" alt="MileSpace"></div>
+    </div>
+    <div class="row">
+      <div class="social">
+        <small>FOLLOW MILESPACE</small>
+        <div class="social-links">
+          <a href="https://www.instagram.com/milespace_jazz/" target="_blank" rel="noopener">Instagram<span>@milespace_jazz</span></a>
+          <a href="https://www.facebook.com/profile.php?id=100095551352360" target="_blank" rel="noopener">Facebook<span>MileSpace</span></a>
         </div>
-        <div class="hero-art">
-          <div class="art-frame"><img src="assets/illustrated-jazz-poster.png" alt="Jazz Live at 台中州廳手繪插畫海報，描繪臺中州廳草地上的爵士樂團" /></div>
-          <div class="art-caption">JAZZ LIVE AT TAICHUNG STATE HALL<br />HAND-DRAWN POSTER / 2027</div>
-        </div>
-        <div class="hero-side-vertical">CITY HALL / OPEN AIR / JAZZ</div>
-        <div class="hero-bottom-note"><span class="red-dot"></span> 4 AFTERNOONS / 9 ENSEMBLES / 1 HISTORIC ROOM</div>
-      </section>
+      </div>
+    </div>
+  </div>
+</footer>
 
-      <section class="manifesto section-shell" id="about" aria-labelledby="about-title">
-        <div class="section-heading"><span class="section-no">01</span><p>前言 / ABOUT THIS EVENING</p></div>
-        <div class="manifesto-grid">
-          <div class="manifesto-title"><span class="yellow-slash"></span><h2 id="about-title">把百年古蹟，<br /><em>坐成一座城市客廳。</em></h2></div>
-          <div class="manifesto-copy">
-            <p class="lead">這一次，爵士不在門裡。它在冬日的草地上，和你一起曬著午後的太陽。</p>
-            <p>「臺中州廳草地爵士樂」從城市歷史場域的日常化出發，回望這座百年古蹟承載的記憶與文化層疊。這座融合巴洛克華麗與新古典優雅的建築，將暫時放下官署的距離感，讓展演視線延伸到外圍充滿綠意的草坪。</p>
-            <p>帶著野餐墊席地而坐，州廳不再只是被觀看的歷史建築，而是一座連結過去與未來的「城市客廳」。爵士樂奔放、即興、充滿律動的旋律，與古蹟的靜謐美學相互交織，讓午後的風也有了節拍。</p>
-            <div class="quote-line">「一場零距離的沉浸式草地野餐音樂會。」</div>
-          </div>
-        </div>
-      </section>
+<!-- BAND MODAL -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="bg" data-close></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true"></div>
+</div>
 
-      <section class="scene-banner" aria-label="臺中州廳草地爵士音樂會示意圖">
-        <img src="assets/daytime-concert.png" alt="晴朗午後的臺中州廳草地爵士音樂會，現場有棕櫚樹、爵士樂團與席地而坐的觀眾" />
-        <div class="scene-overlay"><span>THE AFTERNOON WE IMAGINE</span><strong>Music brings<br /><em>us together.</em></strong><small>臺中州廳內庭草坪 · 2027</small></div>
-      </section>
-
-      <section class="dates section-shell" id="dates" aria-labelledby="dates-title">
-        <div class="section-heading"><span class="section-no">02</span><p>活動資訊 / FOUR AFTERNOONS</p></div>
-        <div class="dates-intro"><h2 id="dates-title">四個午後，<br /><em>讓城市開始搖擺。</em></h2><p>2027 年一月，四場草地演出。每一場從州廳的歷史出發，走向爵士、放克、搖擺與拉丁的當代聲響。</p></div>
-        <div class="showtime-banner"><span>SHOW TIMES</span><strong>1/9・1/10・1/16　15:30 開演</strong><b>1/17　14:30 提前開演</b></div>
-        <div class="date-tabs" role="tablist" aria-label="活動場次選擇">
-          <button class="date-tab is-active" role="tab" aria-selected="true" data-date="jan9">1/9 <span>SAT</span></button>
-          <button class="date-tab" role="tab" aria-selected="false" data-date="jan10">1/10 <span>SUN</span></button>
-          <button class="date-tab" role="tab" aria-selected="false" data-date="jan16">1/16 <span>SAT</span></button>
-          <button class="date-tab" role="tab" aria-selected="false" data-date="jan17">1/17 <span>SUN</span></button>
-        </div>
-        <div class="date-panels">
-          <article class="date-panel is-active" data-panel="jan9" role="tabpanel">
-            <div class="panel-title"><small>WEEKEND 01 / SESSION A</small><h3>1/9 <em>六</em></h3><p>草地演出 · 下午 15:30 — 17:30</p></div>
-            <div class="timeline"><div><time>15:30 — 15:40</time><strong>活動開場理念傳達</strong><span>主持開場引導，說明州廳重啟意義與草地音樂會理念。</span></div><div class="timeline-highlight"><time>15:40 — 16:30</time><strong>Karpós Musica</strong></div><div><time>16:30 — 16:40</time><strong>中場休息與換場</strong><span>演出團隊交替、舞台設備微調。</span></div><div class="timeline-highlight"><time>16:40 — 17:30</time><strong>Longfingers Quintet</strong></div></div>
-          </article>
-          <article class="date-panel" data-panel="jan10" role="tabpanel" hidden>
-            <div class="panel-title"><small>WEEKEND 01 / SESSION B</small><h3>1/10 <em>日</em></h3><p>草地演出 · 下午 15:30 — 17:30</p></div>
-            <div class="timeline"><div><time>15:30 — 15:40</time><strong>活動開場理念傳達</strong><span>主持開場引導與演出團隊介紹。</span></div><div class="timeline-highlight"><time>15:40 — 16:30</time><strong>Old School Funk Unit</strong></div><div><time>16:30 — 16:40</time><strong>中場休息與換場</strong><span>演出團隊交替、舞台設備微調。</span></div><div class="timeline-highlight"><time>16:40 — 17:30</time><strong>Kuljiyan 莉姎爵士五重奏</strong></div></div>
-          </article>
-          <article class="date-panel" data-panel="jan16" role="tabpanel" hidden>
-            <div class="panel-title"><small>WEEKEND 02 / SWING SPECIAL</small><h3>1/16 <em>六</em></h3><p>草地演出 · 下午 15:30 — 17:30</p></div>
-            <div class="timeline"><div><time>15:30 — 16:20</time><strong>爵序大樂團</strong></div><div class="timeline-swing"><time>16:20 — 16:40</time><strong>搖擺舞體驗</strong><span>Let’s Swing Taichung 帶領觀眾進入搖擺舞互動，讓爵士與步伐在草地相遇。</span></div><div class="timeline-highlight"><time>16:40 — 17:30</time><strong>JazzShip Swing</strong></div></div>
-          </article>
-          <article class="date-panel" data-panel="jan17" role="tabpanel" hidden>
-            <div class="panel-title panel-title-early"><small>WEEKEND 02 / SESSION D</small><h3>1/17 <em>日</em></h3><p>草地演出 · 下午 14:30 — 17:30</p><b>本日 14:30 開始</b></div>
-            <div class="timeline"><div class="timeline-highlight"><time>14:30 — 15:20</time><strong>郭馬克爵士五重奏</strong></div><div class="timeline-highlight"><time>15:30 — 16:20</time><strong>盜魂爵樂團</strong></div><div><time>16:20 — 16:40</time><strong>中場休息與換場</strong><span>演出團隊交替、舞台設備微調。</span></div><div class="timeline-highlight"><time>16:40 — 17:30</time><strong>Somm Jazz</strong></div></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="lineup section-shell" id="lineup" aria-labelledby="lineup-title">
-        <div class="section-heading"><span class="section-no">03</span><p>演出陣容 / LINEUP</p></div>
-        <div class="lineup-head"><div><h2 id="lineup-title">九組聲音，<br /><em>四個午後。</em></h2></div><p>從拉丁爵士與探戈、鋼琴與鐵琴五重奏，到大編制爵士、紐奧良銅管與搖擺舞。讓不同的聲響在同一片草地上相遇。</p></div>
-        <div class="lineup-grid">
-          <a href="lineup/karpos.html" class="band-card band-card-dark"><img class="band-photo" src="assets/teams/karpos.jpg" alt="Karpós Musica 演出照片" /><div class="band-card-content"><span class="card-no">01 / 09</span><p>1/9 · 上半場</p><h3>Karpós<br />Musica</h3><small>拉丁爵士 × 探戈</small></div></a>
-          <a href="lineup/longfingers.html" class="band-card"><img class="band-photo" src="assets/teams/longfingers.jpg" alt="Longfingers Quintet 演出照片" /><div class="band-card-content"><span class="card-no">02 / 09</span><p>1/9 · 下半場</p><h3>Longfingers<br />Quintet</h3><small>鋼琴 × 鐵琴五重奏</small></div></a>
-          <a href="lineup/old-school-funk.html" class="band-card band-card-red"><img class="band-photo" src="assets/teams/old-school-funk.jpg" alt="Old School Funk Unit 演出照片" /><div class="band-card-content"><span class="card-no">03 / 09</span><p>1/10 · 上半場</p><h3>Old School<br />Funk Unit</h3><small>Funk · Soul · Disco · Fusion</small></div></a>
-          <a href="lineup/kuljiyan.html" class="band-card"><img class="band-photo" src="assets/teams/kuljiyan.jpg" alt="Kuljiyan 莉姎爵士五重奏演出照片" /><div class="band-card-content"><span class="card-no">04 / 09</span><p>1/10 · 下半場</p><h3>Kuljiyan 莉姎<br />爵士五重奏</h3><small>五種聲線，一個當下</small></div></a>
-          <a href="lineup/juexu.html" class="band-card band-card-yellow"><img class="band-photo" src="assets/teams/juexu.jpg" alt="台中爵序大樂團 JazzShip Orchestra 演出照片" /><div class="band-card-content"><span class="card-no">05 / 09</span><p>1/16 · 上半場</p><h3>台中爵序大樂團<br />JazzShip Orchestra</h3><small>Big Band · Bebop · Swing</small></div></a>
-          <a href="lineup/jazzship.html" class="band-card band-card-dark"><img class="band-photo" src="assets/teams/jazzship.jpg" alt="JazzShip Swing 演出照片" /><div class="band-card-content"><span class="card-no">06 / 09</span><p>1/16 · 下半場</p><h3>JazzShip<br />Swing</h3><small>讓爵士與舞步相遇</small></div></a>
-          <a href="lineup/swing-taichung.html" class="band-card band-card-swing"><img class="band-photo" src="assets/teams/swing-taichung.jpg" alt="Let’s Swing Taichung 台中搖擺舞教室活動照片" /><div class="band-card-content"><span class="card-no">SPECIAL</span><p>1/16 · 中場互動</p><h3>Let’s Swing<br />Taichung</h3><small>台中搖擺舞教室 · 16:20 — 16:40</small></div></a>
-          <a href="lineup/guo-mak.html" class="band-card"><img class="band-photo" src="assets/teams/guo-mak.jpg" alt="郭馬克爵士五重奏演出照片" /><div class="band-card-content"><span class="card-no">07 / 09</span><p>1/17 · 14:30</p><h3>郭馬克<br />爵士五重奏</h3><small>鋼琴主導的自由對話</small></div></a>
-          <a href="lineup/dao-hun.html" class="band-card band-card-red"><img class="band-photo" src="assets/teams/dao-hun.jpg" alt="盜魂爵樂團演出照片" /><div class="band-card-content"><span class="card-no">08 / 09</span><p>1/17 · 15:30</p><h3>盜魂<br />爵樂團</h3><small>紐奧良銅管 × 放克</small></div></a>
-          <a href="lineup/somm-jazz.html" class="band-card band-card-yellow"><img class="band-photo" src="assets/teams/somm-jazz.jpg" alt="Somm Jazz 演出照片" /><div class="band-card-content"><span class="card-no">09 / 09</span><p>1/17 · 16:40</p><h3>Somm<br />Jazz</h3><small>跨文化、跨世代的爵士</small></div></a>
-        </div>
-        <div class="lineup-note"><span>+</span> 特別演出：Let’s Swing Taichung 台中搖擺舞教室 / 1/16 中場互動 16:20 — 16:40</div>
-      </section>
-
-      <section class="interlude section-shell" aria-labelledby="milespace-title">
-        <div class="interlude-copy"><div class="section-heading"><span class="section-no">04</span><p>企劃執行單位 / MILESPACE</p></div><h2 id="milespace-title">讓音樂回到城市，<br /><em>也回到生活裡。</em></h2><p>我們相信爵士不只發生在舞台上，更應融入日常的每一個時刻。</p><p>從一杯飲品、一段旋律，到老建築裡的相遇——MileSpace 持續以現場音樂、空間策展與城市文化為核心，點亮地方的生命力。</p><p>每週在 Rizy 的固定演出，是我們為這座城市準備的微醺午後與夜晚。在這裡，音樂讓空間有了溫度，也讓靈魂彼此相連。</p></div>
-        <div class="milespace-feature"><img src="assets/milespacelogo.png" alt="Milespace 企劃執行單位 Logo" /><div class="interlude-stamp"><span>LIVE<br />DRINK<br />JAZZ</span><b>↗</b></div></div>
-      </section>
-
-      <section class="venue section-shell" id="venue" aria-labelledby="venue-title">
-        <div class="section-heading"><span class="section-no">05</span><p>場地 / VENUE &amp; FLOW</p></div>
-        <div class="venue-top"><div><h2 id="venue-title">臺中州廳<br /><em>內庭草坪。</em></h2><p>舞台在東北角草坪側，觀眾從民權路側拱廊或府廳方向進場，最後在內庭草坪自由入座。</p></div><div class="venue-callout"><span class="red-dot"></span><strong>帶上你的<br />野餐墊。</strong><small>自由入座 / 無固定座位</small></div></div>
-        <div class="venue-layout"><figure><img src="assets/floor-plan.png" alt="臺中州廳內庭草坪場地配置圖，標示舞台區、控台、服務台與入場動線" /><figcaption>FLOOR PLAN / REFERENCE PLAN · 臺中州廳平面配置・俯視圖</figcaption></figure><div class="venue-aside"><div><small>ACTIVITY AREA</small><p>演出位於州廳內庭草坪，採自由入座，不劃設固定座位席。</p></div><div><small>ENTRY FLOW</small><p>民眾可由民權路側拱廊或府廳方向進場。</p></div><div><small>THE ROOM</small><p>一座百年古蹟，一個午後，讓歷史回到公共文化生活裡。</p></div></div></div>
-      </section>
-
-      <section class="closing" aria-labelledby="closing-title"><div class="closing-line"></div><p class="micro-label">MILESPACE · AFTERNOON OF JAZZ · TAICHUNG</p><h2 id="closing-title">冬日午後見。</h2><p>把百年州廳坐成城市客廳。<br />帶上野餐墊，讓爵代新聲在草地發生。</p><a class="button button-yellow" href="#dates">查看活動資訊 <span>↗</span></a><div class="closing-mark">2027<br /><b>01</b></div></section>
-    </main>
-
-    <footer class="site-footer"><div class="footer-brand"><img src="assets/milespacelogo.png" alt="Milespace" /><span>企劃執行單位 · PLANNING &amp; PRODUCTION</span></div><div class="footer-organizers"><div class="organizer organizer-host"><small>主辦單位</small><img src="assets/taichung-culture-logo-white.png" alt="臺中市政府文化局" /></div><div class="organizer-event"><p>百年綠意・爵代新聲<br /><span>臺中州廳草地音樂會 / 2027</span></p></div></div><div class="footer-social"><small>FOLLOW MILESPACE</small><a href="https://www.instagram.com/milespace_jazz/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/profile.php?id=100095551352360" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div><a href="#top">BACK TO TOP ↑</a></footer>
-    <script>
-      const tabs = document.querySelectorAll('.date-tab');
-      const panels = document.querySelectorAll('.date-panel');
-      tabs.forEach((tab) => tab.addEventListener('click', () => {
-        const target = tab.dataset.date;
-        tabs.forEach((item) => { const active = item === tab; item.classList.toggle('is-active', active); item.setAttribute('aria-selected', active); });
-        panels.forEach((panel) => { const active = panel.dataset.panel === target; panel.classList.toggle('is-active', active); panel.hidden = !active; });
-      }));
-      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => entry.isIntersecting && entry.target.classList.add('is-visible')), { threshold: 0.12 });
-      document.querySelectorAll('.section-shell, .closing').forEach((element) => observer.observe(element));
-    </script>
-  </body>
+<script src="data.js?v=0116d"></script>
+<script src="site.js?v=0118"></script>
+</body>
 </html>
