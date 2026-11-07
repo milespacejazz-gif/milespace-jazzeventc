@@ -446,3 +446,20 @@ footer .social-links a::after{content:"↗";font-size:13px;opacity:.7}
   .ib2 .ib-sp{padding:12px 16px;gap:10px;font-size:15px;flex-wrap:wrap}
 }
 .infobar.ib2 .dates a.sp{display:flex;align-items:flex-start;gap:4px}
+
+/* Swing signup CTA */
+.dance .signup{display:inline-flex;align-items:center;gap:14px;margin-top:32px;background:var(--ink);color:var(--y2);font-weight:900;font-size:clamp(17px,1.5vw,20px);letter-spacing:.04em;padding:16px 18px 16px 28px;border-radius:999px;box-shadow:6px 6px 0 var(--red);transition:transform .2s,box-shadow .2s,background .2s}
+.dance .signup i{font-style:normal;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--y2);color:var(--ink);font-size:16px;transition:transform .25s}
+.dance .signup:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--red)}
+.dance .signup:hover i{transform:rotate(45deg)}
+@media(max-width:520px){.dance .signup{width:100%;justify-content:space-between}}
+
+/* Nav: swing signup link */
+.nav-act{display:flex;align-items:center;gap:10px}
+.nav-signup{display:inline-flex;align-items:center;padding:9px 18px;border:2px solid var(--red);color:var(--red);border-radius:999px;font-weight:700;font-size:13px;letter-spacing:.04em;white-space:nowrap;transition:background .2s,color .2s}
+.nav-signup:hover{background:var(--red);color:#fff}
+.nav.solid .nav-signup{border-color:var(--y2);color:var(--y2)}
+.nav.solid .nav-signup:hover{background:var(--y2);color:var(--ink)}
+@media(max-width:1180px){.nav ul{gap:18px}}
+@media(max-width:600px){.nav-act{gap:6px}.nav-signup{padding:6px 11px;font-size:12px;border-width:1.5px}.nav .cta{padding:7px 12px}.nav .logo img{height:18px}.nav .logo{height:18px}}
+@media(max-width:360px){.nav .cta{display:none}}
