@@ -463,3 +463,19 @@ footer .social-links a::after{content:"↗";font-size:13px;opacity:.7}
 @media(max-width:1180px){.nav ul{gap:18px}}
 @media(max-width:600px){.nav-act{gap:6px}.nav-signup{padding:6px 11px;font-size:12px;border-width:1.5px}.nav .cta{padding:7px 12px}.nav .logo img{height:18px}.nav .logo{height:18px}}
 @media(max-width:360px){.nav .cta{display:none}}
+
+/* Venue: wide annotated photo on top, info list below */
+.venue .grid{grid-template-columns:1fr}
+.venue .map{max-width:none;width:100%;justify-self:stretch;padding:10px}
+.venue .map img{width:100%;aspect-ratio:16/9;object-fit:cover;cursor:zoom-in}
+.venue .grid > dl{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(32px,5vw,72px)}
+.venue .grid > dl > div:nth-child(2){border-top:2px solid var(--ink)}
+@media(max-width:900px){.venue .grid > dl{grid-template-columns:1fr}.venue .grid > dl > div:nth-child(2){border-top:1px solid #d9c9a6}.venue .map{max-width:none}}
+
+/* Swing: social link */
+.dance .dance-fb{display:inline-flex;align-items:baseline;gap:10px;margin:32px 0 0 14px;padding:12px 20px;border:2px solid var(--ink);border-radius:999px;font-family:var(--disp);font-weight:700;font-size:15px;color:var(--ink);transition:background .2s,color .2s;vertical-align:top}
+.dance .dance-fb span{font-family:var(--zh);font-weight:500;font-size:13px;color:var(--red);transition:color .2s}
+.dance .dance-fb::after{content:"↗";font-size:13px;opacity:.7}
+.dance .dance-fb:hover{background:var(--ink);color:var(--y2)}
+.dance .dance-fb:hover span{color:var(--cream)}
+@media(max-width:520px){.dance .dance-fb{margin:12px 0 0;width:100%;justify-content:center}}
